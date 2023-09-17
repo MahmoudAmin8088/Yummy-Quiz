@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <div class="nav text-white ">
+        <div class="nav-body bg-black py-5 px-3 d-flex flex-column justify-content-between">
+            <ul>
+                <li id="search" >Search</li>
+                <li id="categories">Categories</li>
+                <li id="area">Area</li>
+                <li id="ingredients">Ingredients</li>
+                <li id="contact">Contact Us</li>
+            </ul>
+    
+            <div class="nav-footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright Â© 2019 All Rights
+                   <br> Reserved.</p>
+            </div>
+            
+        </div>
+        <div class="nav-close bg-white text-black ">
+            <img src="photo/logo.png" alt="logo">
+            <div class="open">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+            <div class="close d-none">
+                <i class="fa-solid fa-xmark fa-2x"></i>
+            </div>
+            <div class="icons d-flex flex-column">
+                <i class="fa-solid fa-globe mb-1"></i>
+                <i class="fa-solid fa-share-nodes mb-3"></i>
+            </div>
+            
+        </div>
+    </div>
+    <div class="loading">
+        <div class="spinner text-white">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
+    </div>
+    
+    
+    <section id="home" class="py-5 text-white bg-black">
+        <div class="container">
+            <div class="row g-5 mt-1" id="items">
+
+            </div>
+            <div class="row gx-4 py-5" id="item-description">
+
+
+
+            </div>
+        </div>
+    </section>
+    <section id="contact-us" class="py-5 text-white bg-black d-none" >
+        <div class="container">
+           <div class="contact-containt">
+            <div class="row w-75 mx-auto">
+                <div class="col-md-6">
+                    <input onkeyup="validateInput()" type="text" id="nameInput" class="form-control contact-input" placeholder="Enter Yor Name">
+                    <p class="invalid-input alert alert-danger d-none" id="nameInputW">ex. mahmoud</p>
+                </div>
+                <div class="col-md-6">
+                    <input onkeyup="validateInput()" type="email" id="emailInput" class="form-control contact-input" placeholder="Enter Yor Email">
+                    <p class="invalid-input alert alert-danger d-none" id="emailInputW">ex. mahmoud@yahoo.com</p>
+                </div>
+                <div class="col-md-6">
+                    <input onkeyup="validateInput()" type="text" id="phoneInput" maxlength="11" class="form-control contact-input" placeholder="Enter Yor Phone">
+                    <p class="invalid-input alert alert-danger d-none"  id="phoneInputW">ex.01127089977</p>
+                </div>
+                <div class="col-md-6">
+                    <input onkeyup="validateInput()" type="number" id="ageInput" class="form-control contact-input" placeholder="Enter Yor Age">
+                    <p class="invalid-input alert alert-danger d-none" id="ageInputW">+18</p>
+                </div>
+                <div class="col-md-6">
+                    <input onkeyup="validateInput()" type="text" id="passInput" class="form-control contact-input" placeholder="Enter Yor Password">
+                    <p class="invalid-input alert alert-danger d-none" id="passInputW">password invalid</p>
+                </div>
+                <div class="col-md-6">
+                    <input onkeyup="validateInput()" type="text" id="rePassInput" class="form-control contact-input" placeholder="RePasword">
+                    <p class="invalid-input alert alert-danger d-none" id="reInputW">NotMatch</p>
+                </div>
+
+                <button class="btn btn-outline-danger m-auto btn1" id="btn" disabled >Submit</button>
+                
+            </div>
+           </div>
+        </div>
+
+    </section>
+    <section id="search-meal" class="text-white bg-black search-meal d-none ">
+       <div class="container">
+        <div class="input w-75 m-auto d-flex ">
+            <div class="search-name w-50 ">
+                <input type="text" onkeyup="searchByName(this.value)" class="form-control bg-transparent text-white" placeholder="Search By Name" >
+            </div>
+            <div class="search-char w-50">
+                <input type="text" onkeyup="searchByChar(this.value)" maxlength="1"  class="form-control bg-transparent text-white" placeholder="Search By First letter" >
+            </div>
+        </div>
+       </div>
+    </section>
+
+   
+   
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
